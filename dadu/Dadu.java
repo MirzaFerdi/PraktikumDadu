@@ -22,7 +22,7 @@ public class Dadu {
         }
         
         
-        return d(Integer.parseInt(split[1]), Integer.parseInt(split[0]));
+        return d(Integer.parseInt(split[1]), Integer.parseInt(split[0]), Integer.parseInt(split1[1]));
     }
 
     int[] d(int sides, int count) {
