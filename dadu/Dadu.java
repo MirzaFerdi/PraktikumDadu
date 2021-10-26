@@ -10,12 +10,13 @@ public class Dadu {
     }
 
     int[] parse(String kode) {
-        if (!kode.matches("[0-9]*d[0-9]+")) {
+        if (!kode.matches("\\d*d\\d++\\d*")) {
             int[] nol = {0};
             return nol;
         }
         
         String[] split = kode.split("d",2);
+        String[] split1 = split[1].split("\\+", 2);
         if (split[0].equals("")) {
             split[0] = "1";
         }
