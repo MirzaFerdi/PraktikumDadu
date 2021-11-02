@@ -12,16 +12,7 @@ public class Main {
             kode = in.nextLine().toLowerCase();
             if (kode.equals("q"))
                 break;
-            
-            int[] total = dadu.parse(kode);
-            for (int i = 1; i < total.length; i++) {
-                if (i+1 == total.length) 
-                    System.out.print(total[i]);
-                else 
-                    System.out.print(total[i] + "+"); 
-            }
-            System.out.print("=" + total[0]);
-            System.out.println("");
+            System.out.println(dadu.parse(kode));
         }
     }
 }
